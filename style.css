@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 31, 39);
+    color: rgb(189, 145, 189);
+}
+
+.container{
+    width: 650px;
+    height: auto;
+    margin: 15px;
+}
+
+table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    font-size: 14px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table thead tr{
+   background-color: rgb(189, 145, 189);
+   color: rgb(39, 31, 39);
+}
+
+table tbody tr{
+    background-color: rgba(189, 145, 189, 0.151);
+}
+
+table tbody tr:not(tr:last-child){
+    border-bottom: 1px solid rgba(189, 145, 189, 0.428);
+}
+
+table thead th, table tbody td{
+    padding: 10px 25px;
+}
+
+table tbody tr:hover{
+    transition: .5s ease-out;
+    background-color: rgba(189, 145, 189, 0.269);
+}
+
+@media only screen and (max-width: 768px){
+    table thead tr{
+        display: none;
+    }
+    table tbody tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    table tbody td{
+        padding: 5px 25px;
+    }
+
+    table tbody td:first-child{
+        background-color: rgb(189, 145, 189);
+        color: rgb(39, 31, 39);
+    }
+
+    table tbody td:not(td:last-child){
+        border-bottom: 1px solid rgba(189, 145, 189, 0.151);
+    }
+    
+}
